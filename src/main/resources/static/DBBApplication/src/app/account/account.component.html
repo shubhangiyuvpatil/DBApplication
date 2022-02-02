@@ -18,8 +18,9 @@
 
     <br> <br>
     <label>Amount</label>
-    <input type="number" value="amount" [(ngModel)]="amount" name="amount" 
-    />{{amount | currency:'IND'}}
+    <input type="number" value="amount" [(ngModel)]="amount" name="amount"   (keydown)="onKeyDownEvent($event)"/>{{amount | currency:'IND'}}
+
+
   </form>
   
   

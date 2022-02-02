@@ -30,6 +30,14 @@ export class AccountComponent implements OnInit {
   console.log("call ngOnInit DBB Application");
   this.getAccountList();
   }
+  onKeyDownEvent(event: any){
+    console.log(event.target.value);
+    if(event.target.value.length>10){
+      event.preventDefault();
+
+    }
+    
+  }
 
 
   getAccountList(){
