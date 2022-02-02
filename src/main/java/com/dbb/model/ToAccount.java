@@ -2,7 +2,7 @@ package com.dbb.model;
 
 public class ToAccount {
 
-	public String accountNumber ;
+	public String accountNumber;
     public String currency ;
 	public String getAccountNumber() {
 		return accountNumber;
@@ -15,6 +15,7 @@ public class ToAccount {
 	}
 	public void setCurrency(String currency) {
 		this.currency = currency;
+		this.accountNumber="dsd";
 	}
-
+	
 }

@@ -1,19 +1,2 @@
-<form>
-  <label>From Account</label>
-  <select>  
-    <option *ngFor="let from of fromAccount" [value]="from.accountNumber">
-        account:{{from.accountNumber}} || currency:{{from.currency}} 
-    </option>
-  </select>
-
-<br> <br>
-  <label>To Account</label>
-
-  <select>  
-    <option *ngFor="let to of toAccount" [value]="to.accountNumber">
-      account:{{to.accountNumber}} || currency:{{to.currency}} 
-    </option>
-  </select>
-</form>
-
-
+{{title}}
+<app-account></app-account>

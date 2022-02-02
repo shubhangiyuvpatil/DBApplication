@@ -1,1 +1,26 @@
-<p>account works!</p>
+<form>
+    <label>From Account</label>
+    <select>  
+      <option *ngFor="let from of fromAccount">
+          account:{{from.accountNumber}} ?? currency:{{from.currency}} 
+      </option>
+    </select>
+  
+  <br> <br>
+    <label>To Account</label>
+  
+    <select>  
+      <option *ngFor="let to of toAccount">
+        account:{{to.accountNumber}} ?? currency:{{to.currency}} 
+      </option>
+    </select>
+
+
+    <br> <br>
+    <label>Amount</label>
+    <input type="number" value="amount" [(ngModel)]="amount" name="amount" 
+    />{{amount | currency:'IND'}}
+  </form>
+  
+  
+  
